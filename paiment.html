@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmation Form</title>
+    <link rel="stylesheet" href="paiment.css">
+</head>
+<body>
+    <section id="logo">
+        <figure>
+            <div>
+                <a href="C:\Users\AHMED\Desktop\HTML progect\home page\Home page.html">
+                    <img src="c:\Users\AHMED\Downloads\Screenshot 2024-11-21 132749_enhanced.png" alt="logo" id="logo" width="200px" height="80px">
+                </a>
+            </div>
+        </figure>
+        <nav>
+            <ul>
+                <li><a href="C:\Users\AHMED\Desktop\HTML progect\home page\Home page.html">Home</a></li>
+                <li><a href="C:\Users\AHMED\Desktop\HTML progect\trasforamtion\Transforamtion.html">Transformation</a></li>
+                <li><a href="C:\Users\AHMED\Desktop\HTML progect\Our services\OurService.html">Our Service</a></li>
+                <li><a href="C:\Users\AHMED\Desktop\HTML progect\contact us\ContactUs.html">Contact</a></li>
+            </ul>
+        </nav>
+    </section>
+    <main id="main">
+        <form id="confirmation-form" onsubmit="return validateForm()">
+            <input type="text" placeholder="First name" required>
+            <input type="text" placeholder="Last name" required><br>
+            <input type="text" placeholder="Age" required><br>
+            <input type="email" placeholder="Email" required><br>
+            <input type="text" placeholder="Phone" required><br>
+            <input type="text" placeholder="Credit card" required><br>
+            <input type="submit" id="submit-button" value="Confirm">
+        </form>
+    </main>
+    <script>
+        function validateForm() {
+    var form = document.getElementById("confirmation-form");
+    var inputs = form.querySelectorAll("input[required]");
+    for (var i = 0; i < inputs.length; i++) {
+        if (inputs[i].value == "") {
+            alert("Please fill all the required fields.");
+            return false;
+        }
+    }
+    showConfirmMessage();
+    return true;
+}
+
+function showConfirmMessage() {
+    alert("paimment acomplished a coach will contact you soon");
+}
+
+    </script>
+</body>
+</html>

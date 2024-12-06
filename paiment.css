@@ -1,0 +1,88 @@
+#logo {
+    background-color: black;
+    padding: 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+#logo img {
+    display: block;
+    width: 100%;
+}
+
+#logo nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+#logo nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 50px;
+    font-size: 20px;
+}
+
+#logo nav ul li {
+    margin: 30px;
+}
+
+#logo nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 12px 18px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    font-size: 18px;
+}
+
+#logo nav ul li a:hover {
+    background-color: red;
+}
+
+#main {
+    min-height: 100vh;
+    background: url('https://www.pixelstalk.net/wp-content/uploads/images6/Black-Panther-4K-Wallpaper-Desktop.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 40px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#main input {
+    margin: 10px 0;
+    padding: 15px;
+    font-size: 20px;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 15px;
+}
+
+#main input::placeholder { 
+    color: black;
+}
+
+#submit-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+#submit-button:hover {
+    background-color: darkred;
+}

@@ -1,0 +1,135 @@
+
+#logo {
+    background-color: black;
+    padding: 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+#logo img {
+    display: block;
+    width: 100%;
+}
+
+#logo nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+#logo nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 50px;
+    font-size: 20px;
+}
+
+#logo nav ul li {
+    margin: 30px;
+}
+
+#logo nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 12px 18px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    font-size: 18px;
+}
+
+#logo nav ul li a:hover {
+    background-color: red;
+}
+
+/* Home Section */
+#main {
+    min-height: 100vh;
+    background: url('https://www.pixelstalk.net/wp-content/uploads/images6/Black-Panther-4K-Wallpaper-Desktop.jpg') no-repeat center fixed;
+    background-size: cover;
+    position: relative;
+    padding: 40px;
+    color: white;
+}
+
+.headers {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 50px;
+    margin-right: 400px;
+}
+
+.contact-info {
+    width: 30%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: white;
+    margin-right: 200px;
+    border-radius: 10px;
+    color: white;
+    border: 1px solid white;
+    font-family: 'Merriweather', serif;
+}
+
+#contact {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+#contact h1 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.custom-button-container {
+    text-align: center;
+}
+
+.custom-button {
+    background-color: red;
+    color: white;
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.custom-button:hover {
+    background-color: darkred;
+}
+
+

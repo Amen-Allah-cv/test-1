@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ContactUs.css">
+</head>
+<body>
+    <section id="logo">
+        <figure>
+            <div>
+                <a href="C:\Users\AHMED\Desktop\HTML progect\home page\Home page.html">
+                    <img src="c:\Users\AHMED\Downloads\Screenshot 2024-11-21 132749_enhanced.png" alt="logo" id="logo" width="200px" height="80px">
+                </a>
+            </div>
+        </figure>
+        <nav>
+            <ul>
+                <li><a href="C:\Users\AHMED\Desktop\HTML progect\home page\Home page.html">Home</a></li>
+                <li><a href="C:\Users\AHMED\Desktop\HTML progect\trasforamtion\Transforamtion.html">Transformation</a></li>
+                <li><a href="C:\Users\AHMED\Desktop\HTML progect\Our services\OurService.html">Our Service</a></li>
+                <li><a href="C:\Users\AHMED\Desktop\HTML progect\contact us\ContactUs.html">Contact</a></li>
+            </ul>
+        </nav>
+    </section>
+    <main id="main">
+        <section class="headers">
+            <h1><span style="font-size: 40px;">Contact <span style="color: red;">Us</span> </span></h1>
+            <p><span style="font-size: 17px; font-family: 'Merriweather', serif;">We'd love to hear from you! Whether you have a question about our services, need assistance,<br> or just want to give us feedback, feel free to reach out to us. Our team is here to help you with all your inquiries.</span></p>
+        </section>
+        <div class="contact-container">
+            <section class="contact-info">
+                <p><strong>Address:</strong> 4671 Sugar Camp Road,<br> Owatonna, Minnesota, 55060</p>
+                <p><strong>Phone:</strong> 571-457-2321</p>
+                <p><strong>Email:</strong> ntamerrwael@mfano.ga</p>
+            </section>
+            <section id="contact">
+                <h1>Send us a message</h1>
+                <input type="text" placeholder="Full name"><br>
+                <input type="email" placeholder="Email" required><br>
+                <textarea placeholder="Your message" rows="6"></textarea><br>
+                <div class="custom-button-container">
+                    <button type="button" class="custom-button" onclick="showMessage()">Send</button>
+                </div>
+                <p id="confirmation-message" style="display: none; color: red; font-size: 18px;">Done</p>
+            </section>
+            
+        </div>
+    </main>
+    <script>
+        function showMessage() {
+            document.getElementById('confirmation-message').style.display = 'block';
+        }
+        </script>
+        
+</body>
+</html>
